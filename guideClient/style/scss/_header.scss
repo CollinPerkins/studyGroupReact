@@ -1,0 +1,21 @@
+nav {
+  ul{
+    display: inline;
+    a {
+      color: $brand-primary-color;
+      &:hover {
+        text-decoration: none;
+        color: $brand-primary-color;
+      }
+      &:focus {
+        text-decoration: none;
+        color: $brand-primary-color;
+      }
+    }
+
+  }
+  li {
+    display: inline;
+
+  }
+}
