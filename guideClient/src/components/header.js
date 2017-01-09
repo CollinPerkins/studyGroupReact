@@ -26,7 +26,7 @@ class Header extends Component {
     return (
       <nav className="">
         <ul>
-          <Link to="/" className="">Collin's Portfolio</Link>
+          <Link to="/" className="">p1xT Study Guides</Link>
         </ul>
         <ul className="pull-right">
           {this.renderLinks()}
