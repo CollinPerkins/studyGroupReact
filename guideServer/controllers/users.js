@@ -1,17 +1,9 @@
 const User = require('../models/user');
 
 exports.getAllUsers = function(req, res, next) {
-  User.find({}, function(err, docs) {
-    if (!err){
-      var filteredUsers = docs.map(function(obj){
-          var newObj = {
-            email: obj.email,
-            name: obj.name,
-            guides: obj.guides
-          }
-         return newObj;
-      });
-      res.send(filteredUsers);
+  User.find({}).toArray(function(err, docs) {
+    if (!err){      
+      res.send(docs);
     } else {throw err;}
   });
 }
